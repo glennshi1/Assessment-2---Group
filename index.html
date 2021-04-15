@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>In IT to win IT</title>
     <link href="styles.css" rel="stylesheet">
-    <script src="/scripts.js"></script>
     <script>
+        const navLinks = document.getElementsByTagName("a");
+
         if (document.location.hash == "" || document.location.hash == "#")
             document.location.hash = "#home";
+        
+        function onBtnClick(e) {
+            for (btn of navLinks) btn.classList.remove("selected");
+            if (e.id !="logo") e.classList.add("selected");
+            else {
+                document.location.hash = "#home";
+            }
+        }
     </script>
 </head>
 <body>
     <header>
         <section>
-            <img onclick="onBtnClick(this)" id="logo" src="/res/logo.svg">
+            <img onclick="onBtnClick(this)" id="logo" src="logo.svg">
             <nav>
                 <div class="split"></div>
                 <a onclick="onBtnClick(this)" href="#profile">Team Profile</a>
