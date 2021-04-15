@@ -4,13 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In 'IT' to win 'IT'</title>
+    <title>In IT to win IT</title>
     <link href="styles.css" rel="stylesheet">
+    <script src="/scripts.js"></script>
+    <script>
+        if (document.location.hash == "" || document.location.hash == "#")
+            document.location.hash = "#home";
+    </script>
 </head>
 <body>
-    <div id="title" class="center">
-        <h1>In I.T. to win I.T.</h1>
-        <p>Welcome to the team!</p>
-    </div>
+    <header>
+        <section>
+            <img onclick="onBtnClick(this)" id="logo" src="/res/logo.svg">
+            <nav>
+                <div class="split"></div>
+                <a onclick="onBtnClick(this)" href="#profile">Team Profile</a>
+                <div class="split"></div>
+                <a onclick="onBtnClick(this)" href="#jobs">Ideal Jobs</a>
+                <div class="split"></div>
+                <a onclick="onBtnClick(this)" href="#indust-dat">Industry Data</a>
+                <div class="split"></div>
+                <a onclick="onBtnClick(this)" href="#it-work">IT Work</a>
+                <div class="split"></div>
+                <a onclick="onBtnClick(this)" href="#it-tech">IT Technologies</a>
+                <div class="split"></div>
+                <a onclick="onBtnClick(this)" href="#project">Project Ideas</a>
+                <div class="split"></div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="page" id="home"> 
+            <div><h2>In I.T. to win I.T.</h2>
+                <p>Welcome to the team!</p></div>
+        </section>
+        <div style="height: 20px;"></div>
+        <section class="page" id="profile">
+            <h1>Team Profile</h1>
+            <section>
+                Insert Team Stuff here
+            </section>
+        </section>
+        <section class="page" id="jobs">
+            <h1>Ideal Jobs</h1>
+            <section>
+                Insert Ideal Jobs stuff here
+            </section>
+        </section>
+        <section class="page" id="indust-dat">
+            <h1>Industry Data</h1>
+            <section>
+                Insert Industry Data stuff here
+            </section>
+        </section>
+        <section class="page" id="it-work">
+            <h1>IT Work</h1>
+            <section>
+                Insert IT Work stuff here
+            </section>
+        </section>
+        <section class="page" id="it-tech">
+            <h1>IT Technologies</h1>
+            <section>
+                Insert IT Technologies stuff here
+            </section>
+        </section>
+        <section class="page" id="project">
+            <h1>Project Ideas</h1>
+            <section>
+                Insert Project Ideas stuff here
+            </section>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
